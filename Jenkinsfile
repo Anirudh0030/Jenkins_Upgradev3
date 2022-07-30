@@ -19,6 +19,7 @@ pipeline {
             }
             stage('Deploy Production') {
                   steps {
+                        input "Does the staging environment look ok?"
                         echo "Deploying in Production Area"
                   }
             }
